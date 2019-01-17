@@ -1,9 +1,9 @@
 #include <SoftwareSerial.h>   // Incluimos la librería  SoftwareSerial  
-SoftwareSerial BT(10,11);    // Definimos los pines RX y TX del Arduino conectados al Bluetooth
+SoftwareSerial BT(11,10);    // Definimos los pines RX y TX del Arduino conectados al Bluetooth
  
 void setup()
 {
-  BT.begin(9600);       // Inicializamos el puerto serie BT (Para Modo AT 2)
+  BT.begin(9600);       // Inicializamos el puerto serie BT (Para Modo AT 2)velocidad= 38400
   Serial.begin(9600);   // Inicializamos  el puerto serie  
 }
  
